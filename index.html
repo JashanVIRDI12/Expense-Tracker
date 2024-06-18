@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="app.css">
+<!--    <script src="https://cdn.tailwindcss.com"></script>-->
+</head>
+<body>
+<div class="mainDiv">
+    <h1>Expense Tracker</h1>
+    <form class="formContent" id="expenseForm">
+        <input class="input" type="text" id="description" placeholder="Expense Description">
+        <select class="select" name="category" id="category">
+            <option value="Housing">Housing</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Travel">Travel</option>
+            <option value="Others">Others</option>
+        </select>
+        <input class="input" type="number" name="amount" id="amount" placeholder="Amount">
+        <button type="button" onclick="addExpense()">Add Expense</button>
+    </form>
+
+    <h2>Expenses Till Now</h2>
+    <table class="table" id="expensesTable">
+        <thead class="tableHead">
+        <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #101010;
+}
+
+.mainDiv {
+    margin: auto;
+    width: 800px;
+    padding: 10px;
+    background: linear-gradient(60deg, #5e60ce, #80ffdb);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 5px 3px 15px 5px rgba(255, 255, 255, 0.1);
+}
+
+div h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input,
+.select {
+    width: 80%;
+    height: 40px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.select {
+    padding: 0;
+    padding-left: 20px;
+}
+
+button {
+    width: 80%;
+    padding: 10px 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: white;
+    box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    width: 79%;
+    transform: translateY(2px);
+    box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    width: 79%;
+    transform: translateY(5px);
+    box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.table {
+
+    width: 95%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid black;
+}
+
+.table th {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr {
+    background-color: #ffffff;
+}
